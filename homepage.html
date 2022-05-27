@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!--remove when finished-->
-
+<!---
     <SCRIPT language="JavaScript">
         var password; 
         var pass1="P@SSWORD1!"; 
-        password=prompt('Enter Password',' '); 
+        password=prompt('Enter Password',''); 
         if (password==pass1) 
         alert('Correct Password! Click OK to Enter!'); 
         else { window.location="http://cjc24.com/incorrect.html"; 
         } 
         </SCRIPT>
+    -->
     
 </head>
 <body>
@@ -25,17 +26,22 @@
     <div class="middle">
         <div class="change">
             <ul>
+                <li><a href="./homepage.html">Home</a></li>
                 <li><a href="./Newyork.html">New York</a></li>
                 <li><a href="./Seattle.html">Seattle</a></li>
                 <li><a href="./Tampa.html">Tampa</a></li>
                 <li><a href="./Tokyo.html">Tokyo</a></li>
                 <li><a href="./Paris.html">Paris</a></li>
+                <li><a href="./gallery/">Gallery</a></li>
             </ul>
 
         </div>
     </div>  
     <div class="img">
         <iframe src="http://cjc24.com/photoexample.html" style="width:500px;height:600px";></iframe>
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s6A7WvYtsCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 
@@ -68,7 +74,12 @@
         background-image: url("newyork.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
-
+    }
+    .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
     }
 </style>
 </html>
